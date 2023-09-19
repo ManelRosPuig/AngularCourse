@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Person } from "./person";
 
 @Component({
     selector: "my-component",
@@ -10,7 +11,7 @@ export class MyComponent implements OnInit {
     name: string = "Manel";
     age: number = 20;
 
-    object: any = {
+    object: Person = {
         name: "Manel",
         age: 20
     };
