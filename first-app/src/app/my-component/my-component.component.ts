@@ -10,6 +10,11 @@ export class MyComponent implements OnInit {
     name: string = "Manel";
     age: number = 20;
 
+    object: any = {
+        name: "Manel",
+        age: 20
+    };
+
     constructor() { }
 
     ngOnInit() {
