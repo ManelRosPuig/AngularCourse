@@ -1,24 +1,19 @@
-import { Component, OnInit } from "@angular/core";
-import { Person } from "./person";
+import { Component } from "@angular/core";
 
 @Component({
     selector: "my-component",
     templateUrl: "./my-component.component.html",
     styleUrls: ["./my-component.component.css"]
 })
-export class MyComponent implements OnInit {
+export class MyComponent {
 
-    name: string = "Manel";
-    age: number = 20;
+    counter: number = 0;
 
-    object: Person = {
-        name: "Manel",
-        age: 20
-    };
+    increment() {
+        this.counter++;
+    }
 
-    constructor() { }
-
-    ngOnInit() {
-        console.log("MyComponent initialized!");
+    decrement() {
+        this.counter--;
     }
 }
