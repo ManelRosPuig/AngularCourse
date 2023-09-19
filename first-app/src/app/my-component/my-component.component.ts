@@ -16,4 +16,8 @@ export class MyComponent {
     decrement() {
         this.counter--;
     }
+
+    reset() {
+        this.counter = 0;
+    }
 }
